@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.5.4
+
+Pipeline only — no audio changes.
+
+- Removed the direct CurseForge-upload step from the release workflow.
+  Publishing to CurseForge now happens on their side via a repository
+  webhook instead of this pipeline calling their API
+
 ## 2.5.3
 
 Metadata and release pipeline only — no audio changes.
