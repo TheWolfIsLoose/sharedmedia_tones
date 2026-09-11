@@ -1,0 +1,32 @@
+name: Package and release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+        with:
+          # release.sh reads tags and history to build the changelog,
+          # so a shallow clone is not enough.
+          fetch-depth: 0
+
+      - name: Package and attach to release
+        uses: BigWigsMods/packager@v2
+        with:
+          # -p reads the CurseForge project id, but the upload itself only
+          # runs once CF_API_TOKEN below is set as a repo secret. Until then
+          # this step just packages and attaches to the GitHub release as before.
+          args: -p 1691590
+        env:
+          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}

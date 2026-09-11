@@ -1,0 +1,23 @@
+package-as: SharedMedia_Tones
+
+# Libraries are committed to this repo so a plain checkout is still directly
+# installable, but the packager replaces them with upstream HEAD at release
+# time. Packaged zips therefore always ship current libraries while the repo
+# stays standalone.
+externals:
+  libs/LibStub: https://repos.curseforge.com/wow/libstub/trunk
+  libs/CallbackHandler-1.0: https://repos.curseforge.com/wow/callbackhandler/trunk/CallbackHandler-1.0
+  libs/LibSharedMedia-3.0: https://repos.curseforge.com/wow/libsharedmedia-3-0/trunk/LibSharedMedia-3.0
+
+# This addon is meaningless without its libraries, so never build a nolib zip.
+enable-nolib-creation: no
+
+ignore:
+  - README.md
+  - CHANGELOG.md
+  - .github
+  - .gitignore
+  # The LibStub external ships its own unit tests and a stub .toc that WoW
+  # would try to load as a separate addon. Neither belongs in a release.
+  - libs/LibStub/tests
+  - libs/LibStub/LibStub.toc
