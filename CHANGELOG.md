@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.6.0
+
+- Added a new Memes group (5 sounds, lime green): Alert, Huh, Mistakes,
+  Potion, WC2 Bloodlust
+- Same loudness normalization pass applied as the rest of the pack
+
 ## 2.5.4
 
 Pipeline only — no audio changes.

@@ -1,8 +1,9 @@
 # SharedMedia_Tones
 
-A standalone World of Warcraft addon with 42 curated notification tones,
-registered with LibSharedMedia-3.0 so they show up in the sound dropdowns of
-WeakAuras, BigWigs, Details, and anything else that reads SharedMedia.
+A standalone World of Warcraft addon with 42 curated notification tones plus
+a small set of meme sounds, registered with LibSharedMedia-3.0 so they show
+up in the sound dropdowns of WeakAuras, BigWigs, Details, and anything else
+that reads SharedMedia.
 
 No configuration. Install it and the tones appear.
 
@@ -60,11 +61,20 @@ metal, gamelan.
 - The Button
 - The Switch
 
+**Memes** (5), shown in lime green — sound clips, not tuned tones.
+
+- Alert
+- Huh
+- Mistakes
+- Potion
+- WC2 Bloodlust
+
 ## Sound design
 
-Every tone is mixed and mastered to be noticeable without being annoying —
+Every sound is mixed and mastered to be noticeable without being annoying —
 brief and attention-grabbing, sitting naturally in the mix rather than
-sticking out or sounding harsh over long play sessions.
+sticking out or sounding harsh over long play sessions. The Memes sounds go
+through the same normalization pass as the Organic and Classic tones.
 
 ## Libraries
 
@@ -73,5 +83,6 @@ works as a standalone addon with no other dependencies required.
 
 ## Credits
 
-Sounds are drawn from the ClearTone Classic and Organic notification sets.
-Assembled by Jakerator.
+Organic and Classic tones are drawn from the ClearTone Classic and Organic
+notification sets. Memes sounds are user-supplied clips. Assembled by
+Jakerator.
