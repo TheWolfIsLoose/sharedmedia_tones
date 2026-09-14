@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.6.2
+
+Pipeline only — no audio changes.
+
+- Memes sounds now register as "Tones: Memes: NAME", matching the
+  Tones: Organic / Tones: Classic naming pattern
+
 ## 2.6.1
 
 Pipeline only — no audio changes.

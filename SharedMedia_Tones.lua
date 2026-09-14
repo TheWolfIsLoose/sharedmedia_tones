@@ -56,8 +56,8 @@ LSM:Register("sound", "|cFFFF69B4Tones: Classic: The Switch|r", [[Interface\AddO
 -- -----
 -- MEMES (5 sounds)
 -- -----
-LSM:Register("sound", "|cFF32CD32Memes: Alert|r", [[Interface\AddOns\SharedMedia_Tones\sound\meme-Alert.ogg]])
-LSM:Register("sound", "|cFF32CD32Memes: Huh|r", [[Interface\AddOns\SharedMedia_Tones\sound\meme-Huh.ogg]])
-LSM:Register("sound", "|cFF32CD32Memes: Mistakes|r", [[Interface\AddOns\SharedMedia_Tones\sound\meme-Mistakes.ogg]])
-LSM:Register("sound", "|cFF32CD32Memes: Potion|r", [[Interface\AddOns\SharedMedia_Tones\sound\meme-Potion.ogg]])
-LSM:Register("sound", "|cFF32CD32Memes: WC2 Bloodlust|r", [[Interface\AddOns\SharedMedia_Tones\sound\meme-WC2-Bloodlust.ogg]])
+LSM:Register("sound", "|cFF32CD32Tones: Memes: Alert|r", [[Interface\AddOns\SharedMedia_Tones\sound\meme-Alert.ogg]])
+LSM:Register("sound", "|cFF32CD32Tones: Memes: Huh|r", [[Interface\AddOns\SharedMedia_Tones\sound\meme-Huh.ogg]])
+LSM:Register("sound", "|cFF32CD32Tones: Memes: Mistakes|r", [[Interface\AddOns\SharedMedia_Tones\sound\meme-Mistakes.ogg]])
+LSM:Register("sound", "|cFF32CD32Tones: Memes: Potion|r", [[Interface\AddOns\SharedMedia_Tones\sound\meme-Potion.ogg]])
+LSM:Register("sound", "|cFF32CD32Tones: Memes: WC2 Bloodlust|r", [[Interface\AddOns\SharedMedia_Tones\sound\meme-WC2-Bloodlust.ogg]])
