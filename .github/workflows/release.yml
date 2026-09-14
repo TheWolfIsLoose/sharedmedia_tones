@@ -21,9 +21,17 @@ jobs:
           fetch-depth: 0
 
       - name: Package and attach to release
-        # GitHub-only: builds the zip and attaches it to the GitHub release.
-        # CurseForge is not called from here — it picks up new tags itself via
-        # its own webhook-based Automatic Packaging, configured on curseforge.com.
+        # CurseForge's own webhook-based Automatic Packaging has a known
+        # platform-side issue (confirmed by other addon authors as of early
+        # 2026): it accepts the webhook delivery but never produces a file.
+        # Until that's fixed on their end, this step pushes directly to
+        # CurseForge via their upload API as a reliable fallback. It quietly
+        # skips that step if CF_API_TOKEN isn't set. Wago is unaffected and
+        # still picks up releases via its own webhook + the X-Wago-ID in the
+        # .toc, so no token is needed for Wago here.
         uses: BigWigsMods/packager@v2
+        with:
+          args: -p 1691590
         env:
           GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}

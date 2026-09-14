@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.6.1
+
+Pipeline only — no audio changes.
+
+- Added `## X-Wago-ID` to the .toc so Wago's release webhook can match this
+  repo to its Wago Addons project (webhook was returning 401 without it)
+- Restored direct CurseForge upload via the packager as a fallback, since
+  CurseForge's own webhook-based Automatic Packaging currently accepts the
+  delivery but never produces a file on their end
+
 ## 2.6.0
 
 - Added a new Memes group (5 sounds, lime green): Alert, Huh, Mistakes,
