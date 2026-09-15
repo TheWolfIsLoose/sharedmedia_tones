@@ -12,6 +12,12 @@ externals:
 # This addon is meaningless without its libraries, so never build a nolib zip.
 enable-nolib-creation: no
 
+# Use our own CHANGELOG.md as the changelog text uploaded to CurseForge/WoWInterface
+# instead of the packager's default of auto-generating one from raw git log output.
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
 ignore:
   - README.md
   - CHANGELOG.md

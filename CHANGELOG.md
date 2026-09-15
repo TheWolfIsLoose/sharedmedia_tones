@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.6.3
+
+Pipeline only — no audio changes.
+
+- Told the packager to use this CHANGELOG.md as the changelog text posted
+  to CurseForge/WoWInterface, instead of its default of auto-generating
+  one from raw git log output (which was showing commit hashes, author
+  lines, and full commit messages on the CurseForge Files page)
+
 ## 2.6.2
 
 Pipeline only — no audio changes.
